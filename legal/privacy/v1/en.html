@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Privacy Policy — Gassi &amp; Friends</title>
+    <style>
+        :root { color-scheme: light dark; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+               max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+               color: #222; line-height: 1.55; }
+        h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; }
+        p { margin: 0.75rem 0; }
+        ul { padding-left: 1.25rem; }
+        li { margin: 0.25rem 0; }
+        .meta { color: #666; font-size: 0.9rem; }
+        .address { white-space: pre-line; font-style: normal; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd;
+                 color: #666; font-size: 0.9rem; }
+        @media (prefers-color-scheme: dark) {
+            body { color: #e6e6e6; background: #121212; }
+            footer { border-top-color: #333; }
+            .meta { color: #aaa; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Gassi &amp; Friends · Version 1</p>
+
+<h2>1. Data Controller</h2>
+<address class="address">[YOUR FULL NAME]
+[YOUR STREET AND NUMBER]
+[YOUR POSTAL CODE AND CITY]
+Email: [YOUR EMAIL ADDRESS]</address>
+
+<h2>2. Data We Collect</h2>
+<p><strong>a) Account data:</strong> When you register, we store your email address and an encrypted password via Firebase Authentication. You can also use the app as a guest — this creates an anonymous account without personal data. When you later upgrade to a registered account, the anonymous UID is linked with your new credentials.</p>
+<p><strong>b) Phone number (Multi-Factor Authentication):</strong> When you register a personal account, SMS-based two-factor authentication (MFA) is mandatory. We store your phone number to send you verification codes for sign-in. Anonymous guest accounts do not require MFA or a phone number.</p>
+<p><strong>c) Profile data:</strong> Display name, theme and language preferences, premium status, and usage-related statistics (e.g., sleep times, longest pet lifetime, number of bondings, friends count) are stored in Cloud Firestore.</p>
+<p><strong>d) Pet data:</strong> Information about your virtual pets (name, breed, gender, adoption date, death date, satisfaction attributes, level, XP, bonding status, walked distance, pats given/received) is stored in Cloud Firestore.</p>
+<p><strong>e) Location data:</strong> (1) During an active walk, the app records your exact GPS location. These route points are stored exclusively locally on your device in a Room database and are not transmitted to our servers. (2) Additionally, an approximate location is stored as an S2 geohash cell (a coarse grid cell, not a precise GPS point) in Cloud Firestore. This allows other users to see you in the „Nearby Users" view of the map. The background location permission is used exclusively during an active walk. You can stop tracking at any time; the S2 cell will then no longer be updated.</p>
+<p><strong>f) Social data:</strong> Friend requests, friend lists (including custom nicknames you assign to friends), bonding requests, bondings, pet likes, memory comments, pat interactions, and answers in wildlife quizzes are stored in Cloud Firestore.</p>
+<p><strong>g) Chat messages:</strong> Content, sender, timestamp, and read status of chat messages are stored in Cloud Firestore. Note: chat messages are not end-to-end encrypted — the operator has technical access. Please do not share sensitive information via chat.</p>
+<p><strong>h) Status and aggregate data:</strong> Online status, current tracking status, last-seen timestamp, and daily aggregated statistics (distance, steps, active time) are stored in Cloud Firestore.</p>
+<p><strong>i) Push token:</strong> If you enable notifications, we store an FCM token (Firebase Cloud Messaging) to send you alerts. You can disable notifications at any time in the app settings.</p>
+<p><strong>j) Bug reports and contact messages:</strong> When you report a bug or send us a contact message, we store the text you enter as well as technical diagnostic data (app version, device model, operating system version).</p>
+<p><strong>k) Crash and analytics data:</strong> We use Firebase Crashlytics for pseudonymized crash reports and Firebase Analytics for pseudonymized usage statistics. Crash reports include your Firebase user ID (a randomly assigned identifier, not your real name), device information (model, OS version), and technical diagnostic data (stack trace, app version, build type). For data integrity errors, the affected virtual pet ID is also included. We never transmit directly identifying data such as email address, phone number, display name, or pet name.</p>
+<p><strong>l) Device integrity:</strong> Through Firebase App Check / Google Play Integrity, a cryptographic token is generated to protect the app from abuse (e.g., manipulated clients, automated scripts). No personal data is transmitted.</p>
+
+<h2>3. Purpose of Data Processing</h2>
+<p>We process your data exclusively for the following purposes:</p>
+<ul>
+    <li>Providing app features (account, pets, map, walks)</li>
+    <li>Social interaction (chats, friendships, bondings, pet likes)</li>
+    <li>Showing nearby users on the map (S2 cell)</li>
+    <li>Sending push notifications for low satisfaction values and social events</li>
+    <li>Processing bug reports and contact requests</li>
+    <li>Improving app stability through crash reports</li>
+    <li>Pseudonymized usage analysis to improve the app</li>
+    <li>Protection from abuse (App Check)</li>
+</ul>
+
+<h2>4. Legal Basis (GDPR)</h2>
+<ul>
+    <li>Art. 6(1)(b) GDPR (contract performance): account, profile, pet data, chat messages, friendships, bondings, phone number for mandatory MFA on registered accounts</li>
+    <li>Art. 6(1)(a) GDPR (consent): exact location data and S2 cell sharing, push notifications</li>
+    <li>Art. 6(1)(f) GDPR (legitimate interest): Crashlytics, Analytics, App Check (abuse protection), processing of bug reports</li>
+    <li>Art. 6(1)(c) GDPR (legal obligation): information obligations pursuant to Art. 13 GDPR and the Swiss Federal Act on Data Protection (FADP)</li>
+</ul>
+<p>You may withdraw consent at any time with effect for the future (Art. 7(3) GDPR). The lawfulness of processing carried out before the withdrawal remains unaffected.</p>
+
+<h2>5. Visibility to Other Users</h2>
+<p>The following data is visible to other app users:</p>
+<ul>
+    <li>Display name, pet name, pet breed, pet level</li>
+    <li>Online status, current tracking status, last-seen timestamp</li>
+    <li>Approximate location as an S2 geohash cell (not a precise GPS point)</li>
+    <li>Pat and stroke interactions with their pets</li>
+    <li>Chat messages — only for confirmed friends</li>
+    <li>Memory comments and pet likes — as a public action</li>
+</ul>
+<p>Not visible to other users: your email address, phone number, exact GPS routes, account settings.</p>
+
+<h2>6. Third-Party Services and Data Transfer</h2>
+<p>We use the following services from Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland):</p>
+<ul>
+    <li>Firebase Authentication — Account management, MFA</li>
+    <li>Cloud Firestore — Data storage</li>
+    <li>Firebase Cloud Functions — server-side processing (satisfaction decrease, account cleanup, statistics aggregation, notification triggers)</li>
+    <li>Firebase Cloud Messaging — Push notifications</li>
+    <li>Firebase Crashlytics — Crash reports</li>
+    <li>Firebase Analytics — pseudonymized usage statistics</li>
+    <li>Firebase App Check / Google Play Integrity — Abuse protection</li>
+    <li>Google Maps SDK — Map display</li>
+</ul>
+<p>These services are hosted in the EU (region europe-west1). Processing is carried out in accordance with Google's privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Where transfers to third countries occur, they are based on Standard Contractual Clauses (SCC) pursuant to Art. 46 GDPR.</p>
+
+<h2>7. Data Retention</h2>
+<ul>
+    <li>Account, profile, pet data: until you delete your account</li>
+    <li>Chat messages: until the friendship is removed or your account is deleted</li>
+    <li>S2 cell, last-seen, tracking status: continuously overwritten; deleted when tracking is stopped or upon account deletion</li>
+    <li>In-app push notifications: until account deletion</li>
+    <li>Bug reports and contact messages: deleted after processing (max. 12 months)</li>
+    <li>FCM token: until notifications are disabled or account deletion</li>
+    <li>Crash reports (Crashlytics): 90 days (automatically by Firebase)</li>
+    <li>Analytics data: per Firebase default (max. 14 months)</li>
+    <li>Local route points (Room): remain locally on the device; deleted upon uninstallation or account deletion</li>
+    <li>Daily aggregate statistics: until account deletion</li>
+</ul>
+
+<h2>8. Minimum Age (Art. 8 GDPR)</h2>
+<p>Use of the app is permitted only from the age of 16. Younger users may only use the app with the explicit consent of their parent or legal guardian (in Germany also §§ 104 ff. BGB). If there is reasonable suspicion that the minimum age is not met, the account may be suspended and deleted.</p>
+
+<h2>9. Automated Processing by Cloud Functions</h2>
+<p>The following processes run automatically on our cloud functions:</p>
+<ul>
+    <li>Periodic reduction of your pets' satisfaction values (every 10 minutes, with a reduced rate during night hours)</li>
+    <li>Aggregation of daily statistics (daily at 23:55 Berlin time)</li>
+    <li>Automatic cleanup of your data upon account deletion</li>
+    <li>Sending push notifications for social events or low satisfaction values</li>
+</ul>
+<p>Clarification: No automated decision with legal effects or similarly significant impact within the meaning of Art. 22 GDPR takes place.</p>
+
+<h2>10. Your Rights</h2>
+<p>You have the right to:</p>
+<ul>
+    <li>Access your stored data (Art. 15 GDPR)</li>
+    <li>Rectification of inaccurate data (Art. 16 GDPR)</li>
+    <li>Erasure of your data (Art. 17 GDPR) — directly in the app via Settings → My Account → Delete Account</li>
+    <li>Restriction of processing (Art. 18 GDPR)</li>
+    <li>Data portability (Art. 20 GDPR) — currently upon request via email to [YOUR EMAIL ADDRESS]; we will respond within the statutory period of one month</li>
+    <li>Object to processing (Art. 21 GDPR)</li>
+    <li>Withdraw consent (Art. 7(3) GDPR) — at any time via app settings (notifications, tracking) or account deletion</li>
+</ul>
+<p>Right to complain: You have the right to lodge a complaint with the competent data protection supervisory authority.</p>
+
+<h2>11. Data Breaches</h2>
+<p>In the event of a personal data breach likely to result in a risk to your rights and freedoms, we will report it without undue delay (no later than 72 hours) to the competent supervisory authority (Art. 33 GDPR). If the risk is likely to be high, you will additionally be informed directly (Art. 34 GDPR).</p>
+
+<h2>12. Changes</h2>
+<p>We reserve the right to update this privacy policy as needed — particularly in case of legal changes or app feature changes. The current version is available within the app. We will inform you of significant changes via in-app notice.</p>
+
+<footer>
+    Last updated: [DATE] · Version 1
+</footer>
+
+</body>
+</html>

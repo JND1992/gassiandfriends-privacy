@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Datenschutzerklärung — Gassi &amp; Friends</title>
+    <style>
+        :root { color-scheme: light dark; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+               max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+               color: #222; line-height: 1.55; }
+        h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; }
+        p { margin: 0.75rem 0; }
+        ul { padding-left: 1.25rem; }
+        li { margin: 0.25rem 0; }
+        .meta { color: #666; font-size: 0.9rem; }
+        .address { white-space: pre-line; font-style: normal; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd;
+                 color: #666; font-size: 0.9rem; }
+        @media (prefers-color-scheme: dark) {
+            body { color: #e6e6e6; background: #121212; }
+            footer { border-top-color: #333; }
+            .meta { color: #aaa; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Gassi &amp; Friends · Version 1</p>
+
+<h2>1. Verantwortlicher</h2>
+<address class="address">[DEIN VOLLSTÄNDIGER NAME]
+[DEINE STRASSE UND HAUSNUMMER]
+[DEINE PLZ UND STADT]
+E-Mail: [DEINE E-MAIL-ADRESSE]</address>
+
+<h2>2. Welche Daten wir erheben</h2>
+<p><strong>a) Kontodaten:</strong> Bei der Registrierung speichern wir deine E-Mail-Adresse und ein verschlüsseltes Passwort über Firebase Authentication. Du kannst die App auch als Gast nutzen — dabei wird ein anonymes Konto ohne persönliche Daten erstellt. Beim späteren Upgrade auf ein registriertes Konto wird die anonyme UID mit den neuen Anmeldedaten verknüpft.</p>
+<p><strong>b) Telefonnummer (Multi-Faktor-Authentifizierung):</strong> Bei der Registrierung eines persönlichen Kontos ist die SMS-basierte Zwei-Faktor-Authentifizierung (MFA) verpflichtend. Wir speichern deine Telefonnummer, um dir Verifizierungscodes zur Anmeldung zu senden. Anonyme Gastkonten benötigen keine MFA und keine Telefonnummer.</p>
+<p><strong>c) Profildaten:</strong> Anzeigename, Theme- und Sprach-Einstellung, Premium-Status sowie nutzungsbezogene Statistiken (z. B. Schlafzeiten, längste Lebensdauer eines Haustiers, Anzahl an Bondings, Anzahl an Freundschaften) werden in Cloud Firestore gespeichert.</p>
+<p><strong>d) Haustierdaten:</strong> Informationen zu deinen virtuellen Haustieren (Name, Rasse, Geschlecht, Adoptionsdatum, Sterbedatum, Zufriedenheitsattribute, Level, XP, Bonding-Status, gelaufene Distanz, gegebene/erhaltene Streicheleinheiten) werden in Cloud Firestore gespeichert.</p>
+<p><strong>e) Standortdaten:</strong> (1) Während eines aktiven Spaziergangs erfasst die App deinen exakten GPS-Standort. Diese Routenpunkte werden ausschließlich lokal auf deinem Gerät in einer Room-Datenbank gespeichert und nicht an unsere Server übertragen. (2) Zusätzlich wird ein ungefährer Standort als S2-Geohash-Zelle (eine grobe Rasterzelle, kein exakter GPS-Punkt) in Cloud Firestore gespeichert. Dadurch können andere Nutzer dich in der „Nutzer in der Nähe"-Ansicht der Karte sehen. Die Hintergrund-Standortberechtigung wird ausschließlich während eines aktiven Spaziergangs genutzt. Du kannst das Tracking jederzeit beenden; die S2-Zelle wird dann nicht mehr aktualisiert.</p>
+<p><strong>f) Soziale Daten:</strong> Freundschaftsanfragen, Freundeslisten (inkl. selbst vergebener Spitznamen für Freunde), Bonding-Anfragen, Bondings, Pet-Likes, Memory-Kommentare, Streichel-Interaktionen sowie Antworten in Wildlife-Quizzes werden in Cloud Firestore gespeichert.</p>
+<p><strong>g) Chatnachrichten:</strong> Inhalt, Sender, Zeitstempel und Lesestatus von Chatnachrichten werden in Cloud Firestore gespeichert. Hinweis: Chatnachrichten sind nicht Ende-zu-Ende-verschlüsselt — der Betreiber hat technisch Zugriff. Bitte teile keine sensiblen Informationen über den Chat.</p>
+<p><strong>h) Status- und Aggregatsdaten:</strong> Online-Status, aktueller Tracking-Status, Last-Seen-Zeitstempel sowie täglich aggregierte Statistiken (Distanz, Schritte, aktive Zeit) werden in Cloud Firestore gespeichert.</p>
+<p><strong>i) Push-Token:</strong> Wenn du Benachrichtigungen aktivierst, speichern wir einen FCM-Token (Firebase Cloud Messaging), um dir Hinweise zu senden. Du kannst Benachrichtigungen jederzeit in den App-Einstellungen deaktivieren.</p>
+<p><strong>j) Bug Reports und Kontaktnachrichten:</strong> Wenn du uns einen Fehler meldest oder eine Kontaktnachricht sendest, speichern wir den von dir eingegebenen Text sowie technische Diagnosedaten (App-Version, Geräte-Modell, Betriebssystem-Version).</p>
+<p><strong>k) Absturz- und Analysedaten:</strong> Wir nutzen Firebase Crashlytics zur Erfassung pseudonymisierter Absturzberichte und Firebase Analytics für pseudonymisierte Nutzungsstatistiken. Absturzberichte enthalten deine Firebase-User-ID (eine zufällig vergebene Kennung, kein Klarname), Geräteinformationen (Modell, Betriebssystemversion) sowie technische Diagnosedaten (Stacktrace, App-Version, Build-Typ). Bei Datenintegritäts-Fehlern wird zusätzlich die ID des betroffenen virtuellen Haustiers übermittelt. Wir übertragen keine direkt identifizierenden Daten wie E-Mail-Adresse, Telefonnummer, Anzeigename oder Haustier-Name.</p>
+<p><strong>l) Geräteintegrität:</strong> Über Firebase App Check / Google Play Integrity wird ein kryptographischer Token erzeugt, um die App vor Missbrauch (z. B. manipulierte Clients, automatisierte Skripte) zu schützen. Es werden keine personenbezogenen Daten übertragen.</p>
+
+<h2>3. Zweck der Datenverarbeitung</h2>
+<p>Wir verarbeiten deine Daten ausschließlich für folgende Zwecke:</p>
+<ul>
+    <li>Bereitstellung der App-Funktionen (Konto, Haustiere, Karte, Spaziergänge)</li>
+    <li>Soziale Interaktion (Chats, Freundschaften, Bondings, Pet-Likes)</li>
+    <li>Anzeige naher Nutzer auf der Karte (S2-Cell)</li>
+    <li>Versand von Push-Benachrichtigungen bei niedrigen Zufriedenheitswerten und sozialen Ereignissen</li>
+    <li>Bearbeitung von Bug Reports und Kontaktanfragen</li>
+    <li>Verbesserung der App-Stabilität durch Absturzberichte</li>
+    <li>Pseudonymisierte Nutzungsanalyse zur Verbesserung der App</li>
+    <li>Schutz vor Missbrauch (App Check)</li>
+</ul>
+
+<h2>4. Rechtsgrundlage (DSGVO)</h2>
+<ul>
+    <li>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung): Konto-, Profil-, Haustierdaten, Chatnachrichten, Freundschaften, Bondings, Telefonnummer für die verpflichtende MFA bei registrierten Konten</li>
+    <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung): exakte Standortdaten und S2-Cell-Sharing, Push-Benachrichtigungen</li>
+    <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse): Crashlytics, Analytics, App Check (Missbrauchsschutz), Bearbeitung von Bug Reports</li>
+    <li>Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtung): Informationspflichten nach Art. 13 DSGVO und schweizerischem Datenschutzgesetz (DSG)</li>
+</ul>
+<p>Du kannst eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO). Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt davon unberührt.</p>
+
+<h2>5. Sichtbarkeit gegenüber anderen Nutzern</h2>
+<p>Folgende Daten sind für andere App-Nutzer sichtbar:</p>
+<ul>
+    <li>Anzeigename, Pet-Name, Pet-Rasse, Pet-Level</li>
+    <li>Online-Status, aktueller Tracking-Status, Last-Seen-Zeitstempel</li>
+    <li>Ungefährer Standort als S2-Geohash-Zelle (kein exakter GPS-Punkt)</li>
+    <li>Streichel- und Pat-Interaktionen mit ihren Tieren</li>
+    <li>Chatnachrichten — nur für bestätigte Freunde</li>
+    <li>Memory-Kommentare und Pet-Likes — als öffentliche Aktion</li>
+</ul>
+<p>Nicht sichtbar für andere Nutzer sind: deine E-Mail-Adresse, Telefonnummer, exakte GPS-Routen, Konto-Einstellungen.</p>
+
+<h2>6. Drittanbieter und Datenübermittlung</h2>
+<p>Wir nutzen folgende Dienste von Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland):</p>
+<ul>
+    <li>Firebase Authentication — Kontoverwaltung, MFA</li>
+    <li>Cloud Firestore — Datenspeicherung</li>
+    <li>Firebase Cloud Functions — serverseitige Verarbeitung (Zufriedenheits-Reduzierung, Account-Bereinigung, Statistik-Aggregation, Notification-Trigger)</li>
+    <li>Firebase Cloud Messaging — Push-Benachrichtigungen</li>
+    <li>Firebase Crashlytics — Absturzberichte</li>
+    <li>Firebase Analytics — pseudonymisierte Nutzungsstatistiken</li>
+    <li>Firebase App Check / Google Play Integrity — Missbrauchsschutz</li>
+    <li>Google Maps SDK — Kartenanzeige</li>
+</ul>
+<p>Diese Dienste werden in der EU (Region europe-west1) gehostet. Die Verarbeitung erfolgt gemäß den Datenschutzbestimmungen von Google (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Soweit eine Übermittlung in Drittländer erfolgt, geschieht dies auf Grundlage von Standardvertragsklauseln (SCC) gemäß Art. 46 DSGVO.</p>
+
+<h2>7. Speicherdauer</h2>
+<ul>
+    <li>Konto-, Profil-, Haustierdaten: bis zur Löschung deines Kontos</li>
+    <li>Chatnachrichten: bis zur Entfernung der Freundschaft oder Konto-Löschung</li>
+    <li>S2-Cell, Last-Seen, Tracking-Status: kontinuierlich überschrieben; gelöscht beim Beenden des Trackings bzw. bei Konto-Löschung</li>
+    <li>Push-Benachrichtigungen (in-App): bis zur Konto-Löschung</li>
+    <li>Bug Reports und Kontaktnachrichten: nach Bearbeitung gelöscht (max. 12 Monate)</li>
+    <li>FCM-Token: bis zur Deaktivierung der Benachrichtigungen oder Konto-Löschung</li>
+    <li>Absturzberichte (Crashlytics): 90 Tage (automatisch durch Firebase)</li>
+    <li>Analytics-Daten: gemäß Firebase-Default (max. 14 Monate)</li>
+    <li>Lokale Routenpunkte (Room): verbleiben lokal auf dem Gerät; gelöscht bei Deinstallation oder Konto-Löschung</li>
+    <li>Tägliche Aggregat-Statistiken: bis zur Konto-Löschung</li>
+</ul>
+
+<h2>8. Mindestalter (Art. 8 DSGVO)</h2>
+<p>Die Nutzung der App ist erst ab einem Alter von 16 Jahren zulässig. Jüngere Nutzer dürfen die App nur mit ausdrücklicher Zustimmung der/des Erziehungsberechtigten nutzen (in Deutschland zusätzlich §§ 104 ff. BGB). Bei begründetem Verdacht auf Unterschreitung des Mindestalters kann das Konto gesperrt und gelöscht werden.</p>
+
+<h2>9. Automatisierte Verarbeitung durch Cloud Functions</h2>
+<p>Die folgenden Vorgänge laufen automatisiert auf unseren Cloud-Funktionen:</p>
+<ul>
+    <li>Periodische Reduzierung der Zufriedenheitswerte deiner Haustiere (alle 10 Minuten, mit reduzierter Rate während der Nachtstunden)</li>
+    <li>Aggregation täglicher Statistiken (täglich um 23:55 Uhr Berliner Zeit)</li>
+    <li>Automatische Bereinigung deiner Daten bei Konto-Löschung</li>
+    <li>Versand von Push-Benachrichtigungen bei sozialen Ereignissen oder niedrigen Zufriedenheitswerten</li>
+</ul>
+<p>Klarstellung: Es findet keine automatisierte Entscheidung mit rechtlichen Folgen oder ähnlich erheblicher Beeinträchtigung im Sinne von Art. 22 DSGVO statt.</p>
+
+<h2>10. Deine Rechte</h2>
+<p>Du hast das Recht auf:</p>
+<ul>
+    <li>Auskunft über deine gespeicherten Daten (Art. 15 DSGVO)</li>
+    <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+    <li>Löschung deiner Daten (Art. 17 DSGVO) — direkt in der App über Einstellungen → Mein Konto → Konto löschen</li>
+    <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+    <li>Datenübertragbarkeit (Art. 20 DSGVO) — derzeit auf Anfrage per E-Mail an [DEINE E-MAIL-ADRESSE]; die Bearbeitung erfolgt innerhalb der gesetzlichen Frist von einem Monat</li>
+    <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+    <li>Widerruf der Einwilligung (Art. 7 Abs. 3 DSGVO) — jederzeit über die App-Einstellungen (Notifications, Tracking) oder Konto-Löschung</li>
+</ul>
+<p>Beschwerderecht: Du hast das Recht, dich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
+
+<h2>11. Datenpannen</h2>
+<p>Im Falle einer Verletzung des Schutzes personenbezogener Daten, die voraussichtlich ein Risiko für deine Rechte und Freiheiten zur Folge hat, melden wir dies unverzüglich (spätestens binnen 72 Stunden) der zuständigen Aufsichtsbehörde (Art. 33 DSGVO). Bei voraussichtlich hohem Risiko wirst du zusätzlich direkt informiert (Art. 34 DSGVO).</p>
+
+<h2>12. Änderungen</h2>
+<p>Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen — insbesondere bei Änderungen der Rechtslage oder der App-Funktionen. Die jeweils aktuelle Fassung ist in der App einsehbar. Bei wesentlichen Änderungen informieren wir dich per In-App-Hinweis.</p>
+
+<footer>
+    Stand: [DATUM] · Version 1
+</footer>
+
+</body>
+</html>
