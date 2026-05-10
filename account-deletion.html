@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Konto löschen — Gassi &amp; Friends · Delete Account</title>
+    <style>
+        :root { color-scheme: light dark; }
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+               max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+               color: #222; line-height: 1.55; }
+        h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.15rem; margin-top: 2rem; }
+        p { margin: 0.75rem 0; }
+        ul { padding-left: 1.25rem; }
+        li { margin: 0.25rem 0; }
+        .meta { color: #666; font-size: 0.9rem; }
+        .lang-switch { margin: 1rem 0 2rem; font-size: 0.9rem; }
+        .lang-switch a { margin-right: 1rem; }
+        a { color: #2962ff; }
+        hr { border: 0; border-top: 1px solid #ddd; margin: 3rem 0; }
+        footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd;
+                 color: #666; font-size: 0.9rem; }
+        @media (prefers-color-scheme: dark) {
+            body { color: #e6e6e6; background: #121212; }
+            footer, hr { border-top-color: #333; }
+            .meta { color: #aaa; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="lang-switch">
+    <a href="#de">Deutsch</a>
+    <a href="#en">English</a>
+</div>
+
+<!-- ─────────────── DEUTSCH ─────────────── -->
+<section id="de">
+
+<h1>Konto und Daten löschen</h1>
+<p class="meta">Gassi &amp; Friends · App-ID: <code>com.gassiandfriends.game</code></p>
+
+<p>Diese Seite beschreibt, wie du dein Konto in der App <strong>Gassi &amp; Friends</strong> löschen lässt und welche Daten dabei entfernt werden.</p>
+
+<h2>1. Löschung direkt in der App</h2>
+<p>Du kannst dein Konto jederzeit selbst und ohne Begründung löschen:</p>
+<ol>
+    <li>Öffne die App und tippe auf <strong>Menü</strong>.</li>
+    <li>Wähle <strong>Pet-Profil → Nutzer-Profil → Mein Konto</strong>.</li>
+    <li>Tippe auf <strong>„Konto löschen"</strong> und bestätige. Aus Sicherheitsgründen kann eine erneute Anmeldung erforderlich sein.</li>
+</ol>
+<p>Sobald du die Löschung bestätigst, werden dein Konto und die zugehörigen Daten unwiderruflich entfernt.</p>
+
+<h2>2. Löschung per Anfrage (z.&nbsp;B. nach Deinstallation)</h2>
+<p>Wenn du keinen Zugriff mehr auf die App hast, kannst du die Löschung per E-Mail anfordern:</p>
+<p><strong>E-Mail:</strong> <a href="mailto:support.gassiandfriends@gmail.com?subject=Kontolöschung%20Gassi%20%26%20Friends">support.gassiandfriends@gmail.com</a></p>
+<p>Bitte sende uns die E-Mail von der bei deinem Konto hinterlegten Adresse oder gib deinen <em>Anzeigenamen</em> und – falls bekannt – deine <em>Firebase-User-ID</em> an, damit wir dein Konto eindeutig zuordnen können. Wir bearbeiten Anfragen innerhalb von <strong>30 Tagen</strong>.</p>
+
+<h2>3. Welche Daten werden gelöscht</h2>
+<p>Mit der Kontolöschung werden folgende Daten dauerhaft entfernt:</p>
+<ul>
+    <li><strong>Konto- und Anmeldedaten:</strong> Firebase-User-ID, E-Mail-Adresse, verschlüsseltes Passwort, hinterlegte Telefonnummer (für SMS-MFA)</li>
+    <li><strong>Profil:</strong> Anzeigename, Spracheinstellung, Theme, Premium-Status, persönliche Statistiken</li>
+    <li><strong>Haustiere:</strong> Alle deine virtuellen Haustiere inkl. Name, Rasse, Adoptionsdatum, Zufriedenheitswerte, Level, XP, Bonding-Status, Distanzen und Streichel-Statistiken</li>
+    <li><strong>Standortbezogene Daten:</strong> Deine S2-Geohash-Zelle (Position auf der Karte) sowie lokal auf dem Gerät gespeicherte Routen und Schritte</li>
+    <li><strong>Soziale Daten:</strong> Freundschaften, Freundschaftsanfragen, Bondings, Bonding-Anfragen, Pet-Likes, Memory-Kommentare, Streichel-Interaktionen, Wildlife-Antworten</li>
+    <li><strong>Chatnachrichten:</strong> Von dir gesendete Nachrichten in privaten Chats</li>
+    <li><strong>Push-Token:</strong> Firebase-Cloud-Messaging-Token</li>
+    <li><strong>Eigene Eingaben:</strong> Bug Reports und Kontaktnachrichten, die du an uns gesendet hast</li>
+</ul>
+
+<h2>4. Welche Daten wir aufbewahren (und wie lange)</h2>
+<p>Aus Sicherheits-, Rechts- oder technischen Gründen können folgende Daten für eine begrenzte Zeit weiter bestehen:</p>
+<ul>
+    <li><strong>Anonymisierte Absturz- und Nutzungsdaten</strong> (Firebase Crashlytics, Analytics): Nach der Löschung wird die Verknüpfung zu deinem Konto entfernt. Aggregierte, nicht mehr personenbeziehbare Daten bleiben zur Verbesserung der App erhalten.</li>
+    <li><strong>Automatische Backups</strong> der Firestore-Datenbank: bis zu <strong>30 Tage</strong>, danach werden sie überschrieben.</li>
+    <li><strong>Sicherheits- und Missbrauchs-Logs</strong> (z.&nbsp;B. App-Check-Verstöße, Rate-Limit-Verstöße): bis zu <strong>90 Tage</strong>, ausschließlich zum Schutz der App und anderer Nutzer.</li>
+    <li><strong>Tagesaggregierte Statistiken</strong> (z.&nbsp;B. Gesamtschritte aller Nutzer pro Tag): bleiben dauerhaft, enthalten aber keine personenbezogenen Daten mehr.</li>
+    <li><strong>Gesetzlich erforderliche Aufbewahrung:</strong> Falls eine rechtliche Verpflichtung besteht (z.&nbsp;B. Steuerbelege bei Premium-Käufen), werden die betroffenen Daten für die gesetzlich vorgeschriebene Dauer aufbewahrt.</li>
+</ul>
+
+<h2>5. Hinweis zu Chatnachrichten</h2>
+<p>Chatnachrichten, die du anderen Nutzern geschickt hast, werden aus deiner Sicht entfernt. In den Postfächern der Empfänger können Kopien der Nachrichten erhalten bleiben — analog zu E-Mail oder Messengern. Wir können diese Kopien nicht für dich löschen.</p>
+
+<h2>6. Kontakt</h2>
+<p>Bei Rückfragen erreichst du uns unter:<br>
+<a href="mailto:support.gassiandfriends@gmail.com">support.gassiandfriends@gmail.com</a></p>
+
+</section>
+
+<hr>
+
+<!-- ─────────────── ENGLISH ─────────────── -->
+<section id="en" lang="en">
+
+<h1>Delete Account and Data</h1>
+<p class="meta">Gassi &amp; Friends · App ID: <code>com.gassiandfriends.game</code></p>
+
+<p>This page explains how to delete your account in the <strong>Gassi &amp; Friends</strong> app and which data is removed.</p>
+
+<h2>1. Delete in-app</h2>
+<p>You can delete your account at any time, without giving a reason:</p>
+<ol>
+    <li>Open the app and tap <strong>Menu</strong>.</li>
+    <li>Go to <strong>Pet Profile → User Profile → My Account</strong>.</li>
+    <li>Tap <strong>"Delete Account"</strong> and confirm. For security reasons you may be asked to sign in again.</li>
+</ol>
+<p>Once you confirm, your account and the associated data are permanently removed.</p>
+
+<h2>2. Request deletion (e.g. after uninstall)</h2>
+<p>If you no longer have access to the app, you can request deletion by email:</p>
+<p><strong>Email:</strong> <a href="mailto:support.gassiandfriends@gmail.com?subject=Account%20deletion%20Gassi%20%26%20Friends">support.gassiandfriends@gmail.com</a></p>
+<p>Please send the email from the address registered on your account, or include your <em>display name</em> and — if you know it — your <em>Firebase user ID</em> so we can identify your account. We process requests within <strong>30 days</strong>.</p>
+
+<h2>3. Which data is deleted</h2>
+<p>The following data is permanently removed when your account is deleted:</p>
+<ul>
+    <li><strong>Account and credentials:</strong> Firebase user ID, email address, hashed password, phone number (for SMS MFA)</li>
+    <li><strong>Profile:</strong> display name, language preference, theme, premium status, personal statistics</li>
+    <li><strong>Pets:</strong> all of your virtual pets, including name, breed, adoption date, satisfaction values, level, XP, bonding status, distances and stroke statistics</li>
+    <li><strong>Location-related data:</strong> your S2 geohash cell (your map position) and locally stored routes and steps on the device</li>
+    <li><strong>Social data:</strong> friends, friend requests, bondings, bonding requests, pet likes, memory comments, stroke interactions, wildlife answers</li>
+    <li><strong>Chat messages:</strong> messages you sent in private chats</li>
+    <li><strong>Push token:</strong> Firebase Cloud Messaging token</li>
+    <li><strong>Your submissions:</strong> bug reports and contact messages you have sent us</li>
+</ul>
+
+<h2>4. Data we retain (and for how long)</h2>
+<p>For security, legal or technical reasons, the following data may persist for a limited period:</p>
+<ul>
+    <li><strong>Anonymized crash and usage data</strong> (Firebase Crashlytics, Analytics): the link to your account is removed on deletion. Aggregated, non-identifiable data is retained to improve the app.</li>
+    <li><strong>Automatic backups</strong> of the Firestore database: up to <strong>30 days</strong>, after which they are overwritten.</li>
+    <li><strong>Security and abuse logs</strong> (e.g. App Check violations, rate-limit violations): up to <strong>90 days</strong>, used solely to protect the app and other users.</li>
+    <li><strong>Daily aggregated statistics</strong> (e.g. total steps across all users per day): retained indefinitely, but no longer contain personal data.</li>
+    <li><strong>Legally required retention:</strong> if a legal obligation applies (e.g. tax records for premium purchases), the affected data is kept for the legally required period.</li>
+</ul>
+
+<h2>5. Note about chat messages</h2>
+<p>Chat messages you sent to other users are removed from your side. Copies of those messages may remain in the recipients' inboxes — similar to email or messaging apps. We cannot delete those copies on your behalf.</p>
+
+<h2>6. Contact</h2>
+<p>For questions, contact us at:<br>
+<a href="mailto:support.gassiandfriends@gmail.com">support.gassiandfriends@gmail.com</a></p>
+
+</section>
+
+<footer>
+    Gassi &amp; Friends · <a href="https://privacy.gassiandfriends.com/">Rechtliches / Legal</a>
+</footer>
+
+</body>
+</html>
